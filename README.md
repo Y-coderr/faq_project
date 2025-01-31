@@ -32,5 +32,5 @@ A Django-based REST API for managing FAQs with automatic translation (English, H
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/yourusername/faq-project.git
+   git clone https://github.com/Y-coderr/faq-project.git
    cd faq-project
