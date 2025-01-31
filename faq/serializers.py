@@ -11,4 +11,4 @@ class FAQSerializer(serializers.ModelSerializer):
 
     def get_translated_question(self, obj):
         lang_code = self.context['request'].query_params.get('lang', 'en')
-        return obj.get_translated_question(lang_code)
+        
