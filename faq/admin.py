@@ -8,3 +8,4 @@ class FAQAdmin(admin.ModelAdmin):
     search_fields = ('question',)
 
 # Register your models here.
+# this project is developed by Yash Kadam(Y-coderr)
