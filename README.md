@@ -9,7 +9,6 @@ A Django-based REST API for managing FAQs with automatic translation (English, H
 - ⚡ Redis caching for translations
 - 🌐 REST API endpoints with language selection
 - 🔐 Admin panel for content management
-- 📦 Docker support
 - 📈 Optimized for performance
 
 ## Tech Stack
