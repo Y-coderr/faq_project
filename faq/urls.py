@@ -6,5 +6,5 @@ router = DefaultRouter()
 router.register(r'faqs', FAQViewSet)
 
 urlpatterns = [
-
+    
 ]
