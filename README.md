@@ -58,6 +58,9 @@ python manage.py runserver
 3. Enter the superuser credentials (provided by the admin or previously created):
    - **Username:** `<your-superuser-username>`
    - **Password:** `<your-superuser-password>`
+   - For example (This Superuser created by me , you create your own):-
+   - **Username:** `kadam`
+   - **Password:** `Kadam@1602`
 4. Click **Login** to access the Django Admin panel.
 
 ### Creating a New Superuser
@@ -86,6 +89,20 @@ using the credentials you just created.
   ```bash
   python manage.py createsuperuser --username admin --email admin@example.com --noinput
   python manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.filter(username='admin').update(password='pbkdf2_sha256$...')"
+
+
+## Example API Useage
+```bash
+# Fetch FAQs in English (default)
+curl http://localhost:8000/api/faqs/
+
+# Fetch FAQs in Hindi
+curl http://localhost:8000/api/faqs/?lang=hi
+
+# Fetch FAQs in Bengali
+curl http://localhost:8000/api/faqs/?lang=bn
+```
+
   
 
 
