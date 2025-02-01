@@ -104,5 +104,37 @@ curl http://localhost:8000/api/faqs/?lang=bn
 ```
 
   
+## Project Screenshots
+   **Admin Login Page**
+![2](https://github.com/user-attachments/assets/a2a2d137-5de4-44ba-8e71-80057e36752e)
 
+   **After Login**
+![1](https://github.com/user-attachments/assets/71463e2b-a4e5-4f9c-940d-35884fab12a6)
 
+   **Create FAQ**
+![3](https://github.com/user-attachments/assets/df4a45de-8d9f-406b-a87b-2d81b397419b)
+
+   **Change FAQ**
+![8](https://github.com/user-attachments/assets/c73e8382-648d-4988-aef8-51e38e27a275)
+
+   **Add User**
+![4](https://github.com/user-attachments/assets/ff697126-0904-4120-a352-dd036ef1db8e)
+
+   **Accessing FAQ's**
+   1.
+   ```bash
+      http://127.0.0.1:8000/api/faqs/
+   ```
+![5](https://github.com/user-attachments/assets/95c51b04-2418-43af-a8ab-f5faaf9cbf68)
+
+   2.
+   ```bash
+      http://127.0.0.1:8000/api/faqs/?lang=hi
+   ```
+![6](https://github.com/user-attachments/assets/90e3f3d4-27e0-4fbe-9318-96e40ead062c)
+
+   3.
+   ```bash
+      http://127.0.0.1:8000/api/faqs/?lang=bn
+   ```
+![7](https://github.com/user-attachments/assets/35a9dfea-e973-40d5-82d8-9f38d4a55050)
