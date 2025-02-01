@@ -33,3 +33,59 @@ A Django-based REST API for managing FAQs with automatic translation (English, H
    ```bash
    git clone https://github.com/Y-coderr/faq-project.git
    cd faq-project
+
+2. **Apply Migrations**
+```bash
+python manage.py migrate
+```
+
+3. **Run the Server**
+```bash
+python manage.py runserver
+```
+
+## Superuser Login
+
+### Using an Existing Superuser
+1. Start the Django development server:
+   ```bash
+   python manage.py runserver
+   ```
+2. Open your browser and go to:
+   ```
+   http://127.0.0.1:8000/admin/
+   ```
+3. Enter the superuser credentials (provided by the admin or previously created):
+   - **Username:** `<your-superuser-username>`
+   - **Password:** `<your-superuser-password>`
+4. Click **Login** to access the Django Admin panel.
+
+### Creating a New Superuser
+If you don’t have an existing superuser, create one using the following command:
+```bash
+python manage.py createsuperuser
+```
+You will be prompted to enter:
+- **Username** (e.g., `admin`)
+- **Email address** (optional)
+- **Password** (must be strong)
+
+Once the superuser is created, you can log in at:
+```
+http://127.0.0.1:8000/admin/
+```
+using the credentials you just created.
+
+## Additional Notes
+- Ensure your database is correctly set up before creating a superuser.
+- If you forget the superuser password, you can reset it with:
+  ```bash
+  python manage.py changepassword <username>
+  ```
+- If you need to create a superuser without prompts, use:
+  ```bash
+  python manage.py createsuperuser --username admin --email admin@example.com --noinput
+  python manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.filter(username='admin').update(password='pbkdf2_sha256$...')"
+  
+
+
